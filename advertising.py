@@ -14,7 +14,6 @@ def user_input_features():
     Newspaper = st.sidebar.slider('Newspaper', 0.3, 114.0, 25.7)
     data = {'TV': TV,
             'Radio': Radio,
-            'petal_length': petal_length,
             'Newspaper': Newspaper}
     features = pd.DataFrame(data, index=[0])
     return features
