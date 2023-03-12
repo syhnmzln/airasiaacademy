@@ -7,7 +7,7 @@ st.header("My first Streamlit App")
 
 option = st.sidebar.selectbox(
     'Select a mini project',
-     ['line chart','map','T n C'])
+     ['line chart','map','T n C','Long Process'])
 
 if option=='line chart':
     chart_data = pd.DataFrame(
@@ -23,7 +23,7 @@ elif option=='map':
 
     st.map(map_data)
 
-elif option=='TnC':
+elif option=='T n C':
     st.write('Before you continue, please read the [terms and conditions](https://www.gnu.org/licenses/gpl-3.0.en.html)')
     show = st.checkbox('I agree the terms and conditions')
     if show:
@@ -31,7 +31,7 @@ elif option=='TnC':
         'Intplan': ['yes', 'yes', 'yes', 'no'],
         'Churn Status': [0, 0, 0, 1]
         }))
-        
+
 else:
     'Starting a long computation...'
     
